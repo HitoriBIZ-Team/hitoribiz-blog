@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HitoriBIZ Blog</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+    <style>
+      body {
+        background-color: #f9fafb;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav {
+        backdrop-filter: blur(10px);
+      }
+
+      header {
+        text-align: center;
+        padding: 6rem 1rem 4rem;
+        background: linear-gradient(
+            to right,
+            rgba(0, 102, 204, 0.8),
+            rgba(0, 170, 255, 0.8)
+          ),
+          url('https://source.unsplash.com/1600x600/?business,office');
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: overlay;
+        color: white;
+      }
+
+      header h1 {
+        font-size: 2.6rem;
+        font-weight: 700;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+        margin-bottom: 1rem;
+      }
+
+      header p {
+        font-size: 1.1rem;
+        margin: 0 auto;
+        max-width: 600px;
+        line-height: 1.6;
+        text-shadow: 0 1px 6px rgba(0, 0, 0, 0.3);
+      }
+
+      main {
+        padding: 2rem 0;
+      }
+
+      article img {
+        border-radius: 8px;
+        width: 100%;
+        height: auto;
+      }
+
+      article {
+        margin-bottom: 2.5rem;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 3rem;
+        padding: 2rem 0;
+        background: #e9ecef;
+      }
+
+      @media (max-width: 768px) {
+        header {
+          padding: 4rem 1rem 3rem;
+        }
+        header h1 {
+          font-size: 2rem;
+        }
+        header p {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="container-fluid">
+      <ul>
+        <li><strong>HitoriBIZ</strong></li>
+      </ul>
+      <ul>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Works</a></li>
+        <li><a href="#" role="button">Contact</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1>HitoriBIZ Blog</h1>
+      <p>ビジネスの未来をひとりから発信する</p>
+    </header>
+
+    <main class="container">
+      <h2>最新の記事</h2>
+      <h3>Business Insights / Life Design / Creativity</h3>
+
+      <article>
+        <img src="https://source.unsplash.com/800x500/?entrepreneur,workspace" alt="Entrepreneur workspace" />
+        <h3>ひとりビジネスの戦略設計</h3>
+        <p>「小さく始めて、確実に育てる」。ミニマムな起業戦略の要点をまとめました。</p>
+        <a href="#">続きを読む</a>
+      </article>
+
+      <article>
+        <img src="https://source.unsplash.com/800x500/?laptop,coffee" alt="Laptop and coffee" />
+        <h3>自分らしい働き方をデザインする</h3>
+        <p>ライフスタイルと仕事をどう融合させるか。フリーランス思考のヒント。</p>
+        <a href="#">続きを読む</a>
+      </article>
+
+      <article>
+        <img src="https://source.unsplash.com/800x500/?teamwork,meeting" alt="Teamwork meeting" />
+        <h3>小さなチームで大きな成果を生む</h3>
+        <p>少人数でも結果を出すためのチーム設計とツール活用法。</p>
+        <a href="#">続きを読む</a>
+      </article>
+    </main>
+
+    <section aria-label="subscribe">
+      <div class="container">
+        <h2>購読・お問い合わせ</h2>
+        <h3>最新の記事をメールで受け取る</h3>
+        <form class="grid">
+          <input type="text" placeholder="お名前" required />
+          <input type="email" placeholder="メールアドレス" required />
+          <button type="submit" onclick="event.preventDefault()">登録する</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="container">
+      <small>
+        <a href="#">プライバシーポリシー</a> • <a href="#">利用規約</a>
+      </small>
+      <p>&copy; 2025 HitoriBIZ</p>
+    </footer>
+  </body>
+</html>
