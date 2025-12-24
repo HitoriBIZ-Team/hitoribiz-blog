@@ -8,7 +8,7 @@ export default function HitoriBizSitePage() {
   const work = works.find((w) => w.slug === "hitoribiz-site");
   if (!work) return <div>Not found</div>;
 
-  const posts = getAllPosts().filter((p) => p.workSlug === work.slug);
+  const posts = getAllPosts().filter((p) => (p as any).workSlug === work.slug);
 
   return (
     <article className="container" style={{ padding: "40px 0" }}>
