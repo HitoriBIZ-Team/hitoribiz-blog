@@ -7,19 +7,19 @@ export default function ContactPage() {
       </p>
 
       <form
-        action="https://submit-form.com/UWNAVrVsy"
+        action="https://formspree.io/f/xbdjyvzb"
         method="POST"
         className="mt-8 space-y-4"
       >
         {/* ✅ 送信後の遷移先（本番URL） */}
         <input
           type="hidden"
-          name="_redirect"
+          name="_next"
           value="https://hitoribiz-blog-prod.vercel.app/contact/thanks"
         />
 
-        {/* ✅ スパム対策（honeypot） */}
-        <input type="text" name="_honey" style={{ display: "none" }} />
+        {/* ✅ 迷惑送信対策（honeypot） */}
+        <input type="text" name="_gotcha" style={{ display: "none" }} />
 
         <div>
           <label className="text-sm font-medium text-slate-700">お名前</label>
@@ -38,6 +38,15 @@ export default function ContactPage() {
             name="email"
             type="email"
             required
+            className="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-slate-500 focus:outline-none"
+          />
+        </div>
+
+        <div>
+          <label className="text-sm font-medium text-slate-700">件名</label>
+          <input
+            name="subject"
+            placeholder="サービスのご相談 / お見積りのご依頼 など"
             className="mt-1 w-full rounded-xl border border-slate-300 px-3 py-2 focus:border-slate-500 focus:outline-none"
           />
         </div>
