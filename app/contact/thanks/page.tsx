@@ -14,11 +14,11 @@ export default function ThanksPage() {
         </p>
         <div className="mt-8 flex justify-center gap-4">
           <Link
-            href="/blog"
-            className="rounded-full bg-sky-700 px-6 py-2 text-sm font-semibold text-white hover:bg-sky-600"
-          >
-            トップページへ戻る
-          </Link>
+  href="/"
+  className="rounded-full bg-sky-700 px-6 py-2 text-sm font-semibold text-white hover:bg-sky-600"
+>
+  トップページへ戻る
+</Link>
           <Link
             href="/contact"
             className="text-sm font-semibold text-sky-700 hover:underline"
