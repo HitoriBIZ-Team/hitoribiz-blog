@@ -1,5 +1,8 @@
 import Link from "next/link";
 
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://hitoribiz-blog-prod.vercel.app";
+
 export default function ThanksPage() {
   return (
     <main className="min-h-screen bg-slate-50 text-slate-900">
@@ -15,17 +18,15 @@ export default function ThanksPage() {
         </p>
 
         <div className="mt-8 flex justify-center gap-4">
-          {/* ✅ 迷子防止：本番URLへ固定 */}
           <Link
-            href="https://hitoribiz-blog-prod.vercel.app/"
+            href={`${SITE_URL}/`}
             className="rounded-full bg-sky-700 px-6 py-2 text-sm font-semibold text-white hover:bg-sky-600"
           >
             トップページへ戻る
           </Link>
 
-          {/* ✅ こちらも本番URLで固定（さらに安全） */}
           <Link
-            href="https://hitoribiz-blog-prod.vercel.app/contact"
+            href={`${SITE_URL}/contact`}
             className="text-sm font-semibold text-sky-700 hover:underline"
           >
             もう一度問い合わせる
